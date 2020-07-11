@@ -96,7 +96,11 @@ Isolate projects which previously failed
 
 Default: `false`
 
-Parallelize the command
+Parallelize the command.  
+Note: Pass a parallel flag to the E2E runner by adding an extra `-- --parallel` to your command:
+```
+nx affected:e2e --parallel --maxParallel=2 -- --parallel
+```
 
 ### plain
 
